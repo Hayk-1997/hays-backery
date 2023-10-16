@@ -170,77 +170,29 @@
     </style>
     <style>
         #header-text {
-            /*z-index: 12;*/
-            /*font-family: Cormorant;*/
-            /*height: auto;*/
-            /*text-decoration: none;*/
-            /*white-space: normal;*/
-            /*min-height: 0;*/
-            /*min-width: 0;*/
-            /*max-height: none;*/
-            /*max-width: none;*/
-            /*text-align: center;*/
-            /*line-height: 100px;*/
-            /*letter-spacing: 0;*/
-            /*font-weight: 300;*/
-            /*font-size: 80px;*/
-            /*transform-origin: 50% 50%;*/
-            /*opacity: 1;*/
-            /*transform: translate(0px, 0px);*/
-            /*visibility: visible;*/
-            /*color: #ed8a25;*/
-
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
             z-index: 12;
             font-family: Cormorant;
-            height: auto;
             text-decoration: none;
             white-space: normal;
-            min-height: 0;
-            width: 100vw;
-            max-height: none;
-            max-width: none;
             text-align: center;
             line-height: 50px;
             letter-spacing: 0;
             font-weight: 300;
             font-size: 40px;
-            transform-origin: 50% 50%;
             opacity: 1;
-            transform: translate(0px, 0px);
             visibility: visible;
             color: #ed8a25;
-            display: block;
-        }
-        #rs-mask-wrap {
-            position: absolute;
-            display: block;
-            transform-origin: 50% 50%;
-            overflow: hidden;
+            text-shadow: 8px 12px 37px rgba(51, 0, 0, 1);
         }
 
-        .rs-parallax-wrap {
+        #hays-logo {
             position: absolute;
-            display: block;
-            pointer-events: auto;
-            z-index: 12;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .rs-parallax-wrap {
-                top: 200px;
-            }
-        }
-        @media only screen and (min-width: 768px) {
-            #rs-mask-wrap {
-                transform: translate(0px, 0px);
-            }
-            #header-text {
-                width: 929px;
-            }
-            .rs-parallax-wrap {
-                top: 400px;
-                left: 207.5px;
-            }
+            top: 30px;
         }
     </style>
 </head>
@@ -252,7 +204,7 @@
             <nav class="lte-navbar" data-spy="" data-offset-top="0">
                 <div class="container">
                     <div class="lte-navbar-logo">
-                        <a class="lte-logo" href="#">
+                        <a class="lte-logo" id="hays-logo" href="#">
                             <img src="/images/logo.png" alt="Bakery" style="height: 100px; width: 100px">
                         </a>
                     </div>
@@ -354,10 +306,10 @@
                                                                                             </rs-sbg-effectwrap>
                                                                                         </rs-sbg-px>
                                                                                         <rs-layer-wrap
-                                                                                                class="rs-parallax-wrap">
+                                                                                               >
                                                                                             <rs-loop-wrap
-                                                                                                    style="position:absolute;display:block;">
-                                                                                                <rs-mask-wrap id="rs-mask-wrap">
+                                                                                                   >
+                                                                                                <rs-mask-wrap >
                                                                                                     <rs-layer
                                                                                                             id="header-text"
                                                                                                             class="rs-layer">
