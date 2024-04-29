@@ -1,0 +1,48 @@
+html {
+    font-family: sans-serif;
+    background: #d4d4d41f;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("../images/logo.png");
+    width: 557px;
+    height: 340px;
+}
+
+.text {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.phone-number {
+    text-decoration: none;
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    .logo {
+        width: 75%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 204px;
+    }
+
+    .text {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo {
+        height: 163px;
+    }
+}
